@@ -83,3 +83,25 @@ CREATE TABLE past_classes(
 	f_name VARCHAR(20) NOT NULL,
 	grade VARCHAR(10)
 );
+
+CREATE TABLE CPQG (
+	co_number varchar(15) NOT NULL,
+	f_name varchar(40) NOT NULL,
+	quarter varchar(10) NOT NULL,
+	year integer,
+	a integer,
+	b integer,
+	c integer,
+	d integer,
+	other integer
+);
+
+CREATE TABLE CPG (
+	co_number varchar(15) NOT NULL,
+	f_name varchar(40) NOT NULL,
+	a integer,
+	b integer,
+	c integer,
+	d integer,
+	other integer
+);
