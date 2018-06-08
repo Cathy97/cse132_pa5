@@ -125,7 +125,7 @@ BEGIN
 	IF POSITION('M' in New.le_day ) > 0 THEN 
 		FOR temprow IN SELECT * FROM class WHERE f_name = NEW.f_name
 			LOOP 
-				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number
+				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number THEN
 					IF POSITION ('M' in temprow.le_day) > 0 AND NEW.le_time = temprow.le_time AND NEW.le_ampm = temprow.le_ampm
 						THEN RAISE EXCEPTION 'Professor % Already Teaching Course % Section % At % % %', temprow.f_name, temprow.co_number, temprow.section_id, temprow.le_day, temprow.le_time, temprow.le_ampm;
 					END IF;
@@ -135,7 +135,7 @@ BEGIN
 	IF POSITION('Tue' in New.le_day ) > 0 THEN 
 		FOR temprow IN SELECT * FROM class WHERE f_name = NEW.f_name
 			LOOP 
-				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number
+				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number THEN
 					IF POSITION ('Tue' in temprow.le_day) > 0 AND NEW.le_time = temprow.le_time AND NEW.le_ampm = temprow.le_ampm
 						THEN RAISE EXCEPTION 'Professor % Already Teaching Course % Section % At % % %', temprow.f_name, temprow.co_number, temprow.section_id, temprow.le_day, temprow.le_time, temprow.le_ampm;
 					END IF;
@@ -145,7 +145,7 @@ BEGIN
 	IF POSITION('W' in New.le_day ) > 0 THEN 
 		FOR temprow IN SELECT * FROM class WHERE f_name = NEW.f_name
 			LOOP 
-				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number
+				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number THEN
 					IF POSITION ('W' in temprow.le_day) > 0 AND NEW.le_time = temprow.le_time AND NEW.le_ampm = temprow.le_ampm
 						THEN RAISE EXCEPTION 'Professor % Already Teaching Course % Section % At % % %', temprow.f_name, temprow.co_number, temprow.section_id, temprow.le_day, temprow.le_time, temprow.le_ampm;
 					END IF;
@@ -155,7 +155,7 @@ BEGIN
 	IF POSITION('Thu' in New.le_day ) > 0 THEN 
 		FOR temprow IN SELECT * FROM class WHERE f_name = NEW.f_name
 			LOOP 
-				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number
+				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number THEN
 					IF POSITION ('Thu' in temprow.le_day) > 0 AND NEW.le_time = temprow.le_time AND NEW.le_ampm = temprow.le_ampm
 						THEN RAISE EXCEPTION 'Professor % Already Teaching Course % Section % At % % %', temprow.f_name, temprow.co_number, temprow.section_id, temprow.le_day, temprow.le_time, temprow.le_ampm;
 					END IF;
@@ -165,7 +165,7 @@ BEGIN
 	IF POSITION('F' in New.le_day ) > 0 THEN 
 		FOR temprow IN SELECT * FROM class WHERE f_name = NEW.f_name
 			LOOP 
-				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number
+				IF temprow.section_id != NEW.section_id or temprow.co_number != NEW.co_number THEN
 					IF POSITION ('F' in temprow.le_day) > 0 AND NEW.le_time = temprow.le_time AND NEW.le_ampm = temprow.le_ampm
 						THEN RAISE EXCEPTION 'Professor % Already Teaching Course % Section % At % % %', temprow.f_name, temprow.co_number, temprow.section_id, temprow.le_day, temprow.le_time, temprow.le_ampm;
 					END IF;

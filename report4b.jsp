@@ -1,4 +1,3 @@
-<%
 
 CREATE OR REPLACE FUNCTION second()
 RETURNS trigger AS

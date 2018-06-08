@@ -41,6 +41,7 @@ CREATE TABLE student(
 CREATE TABLE class(
 	title VARCHAR(80) NOT NULL,
 	section_id INT NOT NULL,
+	le_day VARCHAR(10) NOT NULL,
 	enroll_limit INT NOT NULL,
 	di_mandatory INT NOT NULL,
 	f_name VARCHAR(20) NOT NULL,
@@ -48,8 +49,7 @@ CREATE TABLE class(
 	review_session INT NOT NULL,
 	waitlist INT NOT NULL,
 	quarter VARCHAR(20) NOT NULL,
-	year INT NOT NULL,
-	le_day VARCHAR(10) NOT NULL,
+	year INT NOT NULL,	
 	le_time VARCHAR(20) NOT NULL,
 	le_ampm VARCHAR(10) NOT NULL,
 	di_day VARCHAR(10) NOT NULL,
@@ -74,12 +74,12 @@ CREATE TABLE course_enrollment(
 	CONSTRAINT TAKE_KEY PRIMARY KEY (s_ssn,co_number,section_id)
 );
 
--- CREATE TABLE past_classes(
--- 	s_ssn INT NOT NULL,
--- 	co_number(20) VARCHAR NOT NULL,
--- 	section_id INT NOT NULL,
--- 	year INT NOT NULL,
--- 	quarter VARCHAR(20) NOT NULL,
--- 	f_name VARCHAR(20) NOT NULL,
--- 	grade VARCHAR(10)
--- );
+CREATE TABLE past_classes(
+	s_ssn INT NOT NULL,
+	co_number VARCHAR(20) NOT NULL,
+	section_id INT NOT NULL,
+	year INT NOT NULL,
+	quarter VARCHAR(20) NOT NULL,
+	f_name VARCHAR(20) NOT NULL,
+	grade VARCHAR(10)
+);

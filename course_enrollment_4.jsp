@@ -90,7 +90,7 @@
     <table border="1">
         <tr>
                <th>Student SSN</th>
-               <th>Course Name</th>
+               <th>Course Number</th>
                <th>Section Number</th>
                <th>Unit</th>
                <th>New Course Name</th>
@@ -103,6 +103,8 @@
                    <th><input value="" name="co_number" size="10"></th>
                    <th><input value="" name="section_id" size="10"></th>
                    <th><input value="" name="units" size="10"></th>
+                   <th></th>
+                   <th></th>
                    <th><input type="submit" value="Insert"></th>
                </form>
            </tr>
