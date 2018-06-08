@@ -55,3 +55,39 @@ insert into faculty values('Taylor Swift', 'Professor');
 insert into faculty values('Kelly Clarkson', 'Professor');
 insert into faculty values('Adam Levine', 'Professor');
 insert into faculty values('Bjork', 'Professor');
+
+-- CPQG
+INSERT INTO CPQG (co_number, f_name, quarter, year, a, b, c, d, other) VALUES 
+	('cse8a', 'Justin Bieber', 'Winter', 2017, 1, 1, 0, 0, 0),
+	('cse8a', 'Selena Gomez', 'Fall', 2017, 0, 0, 1, 0, 0),
+	('cse8a', 'Kelly Clarkson', 'Winter', 2018, 1, 1, 0, 0, 0),
+	('cse105', 'Taylor Swift', 'Spring', 2017, 1, 1, 1, 0, 0),
+	('cse250a', 'Bjork', 'Winter', 2017, 0, 0, 1, 0, 0),
+	('cse250a', 'Bjork', 'Winter', 2018, 0, 1, 0, 1, 1),
+	('cse250b', 'Justin Bieber', 'Spring', 2017, 2, 0, 0, 0, 0),
+	('cse255', 'Justin Bieber', 'Winter', 2018, 0, 2, 0, 0, 1),
+	('cse232a', 'Kelly Clarkson', 'Winter', 2018, 1, 0, 0, 0, 0),
+	('cse221', 'Justin Bieber', 'Fall', 2017, 2, 0, 0, 0, 0),
+	('mae107', 'Bjork', 'Fall', 2017, 0, 1, 0, 0, 0),
+	('mae108', 'Selena Gomez', 'Winter', 2017, 1, 1, 0, 0, 0),
+	('mae108', 'Selena Gomez', 'Spring', 2017, 0, 2, 0, 0, 0),
+	('phil10', 'Bjork', 'Winter', 2018, 2, 0, 2, 0, 0),
+	('phil165', 'Flo Rida', 'Fall', 2017, 0, 0, 0, 1, 1),
+	('phil165', 'Adam Levine', 'Winter', 2018, 1, 0, 0, 0, 0);
+
+-- CPG
+INSERT INTO CPG (co_number, f_name, a, b, c, d, other) VALUES 
+	('cse8a', 'Justin Bieber', 1, 1, 0, 0, 0),
+	('cse8a', 'Selena Gomez', 0, 0, 1, 0, 0),
+	('cse8a', 'Kelly Clarkson', 1, 1, 0, 0, 0),
+	('cse105', 'Taylor Swift', 1, 1, 1, 0, 0),
+	('cse250a', 'Bjork', 0, 1, 1, 1, 1),
+	('cse250b', 'Justin Bieber', 2, 0, 0, 0, 0),
+	('cse255', 'Justin Bieber', 0, 2, 0, 0, 1),
+	('cse232a', 'Kelly Clarkson', 1, 0, 0, 0, 0),
+	('cse221', 'Justin Bieber', 2, 0, 0, 0, 0),
+	('mae107', 'Bjork', 0, 1, 0, 0, 0),
+	('mae108', 'Selena Gomez', 1, 3, 0, 0, 0),
+	('phil10', 'Bjork', 2, 0, 2, 0, 0),
+	('phil165', 'Flo Rida', 0, 0, 0, 1, 1),
+	('phil165', 'Adam Levine', 1, 0, 0, 0, 0);
